@@ -1,0 +1,410 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --flo:linear-gradient(white,lightblue,dodgerblue,pink,red);
+}
+#logo
+{
+    width: 40px;
+    height: 40px;
+}
+
+body
+{
+    /* background-color: purple;
+    color: white; */
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(slateblue,pink,lightblue);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container
+{
+    width: inherit;
+}
+
+.co_nav
+{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.float
+{
+    /* background-image: linear-gradient(slateblue,dodgerblue,lightblue,pink); */
+    /* background-repeat: no-repeat; */
+border: 1px solid lightgrey;
+background: white;
+}
+
+#hmid
+{
+    text-align: center;
+    letter-spacing: .3em;
+    color: grey;
+    font-weight: 500;
+}
+
+#hmid:hover
+{
+    color: black;
+}
+
+.float
+{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 1px #1c1c1c;
+    margin-top: 20px;
+    overflow: hidden;
+    background: linear-gradient(whitesmoke,aliceblue);
+}
+
+.flo_nav
+{
+   height: 10%;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.flo_nav:hover{
+    border-bottom: 1px solid aliceblue;
+    box-shadow: 0 1px 5px 0 lightblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.links
+{
+    width: 70%;
+   height: 55%;
+    
+}
+.links ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.links ul a
+{
+    text-decoration: none;
+    text-shadow :5px #1c1c1c;
+    font-weight: 450;
+}
+.links ul a:hover
+{
+    color: black;
+   border-bottom: 1px dashed tomato;
+}
+
+
+.bt
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background: linear-gradient(to right,lightblue,slateblue,pink);
+    color: black;
+    font-weight: bold;
+}
+
+.bt:hover
+{
+    color: black;
+    background: radial-gradient(lightblue,white);
+    border: 1px ridge lightgrey;
+    box-shadow: 1px 1px 5px 0 slateblue;
+}
+
+.flo_mid
+{
+    height: 70%;
+    display: grid;
+   grid-template-columns: 15% 60% 20%;
+   place-items: center;
+   justify-content: center;
+}
+
+.meta
+{
+    width: 50px;
+}
+.meta title
+{
+    background: linear-gradient(white,lightblue);
+    border: 1px solid blue;
+    color: white;
+    font-weight: 500;
+}
+
+footer
+{
+    text-align: center;
+}
+
+.bubble
+{
+    height: 15%;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbl
+{
+    width: 70px;
+    height: 70px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+    font-weight: bolder;
+    background: radial-gradient(lightblue,slateblue,white);
+ position: absolute;
+ bottom: 8px;
+ left: 47%;
+ animation: spread 1s linear infinite forwards;
+ font-size: 1.1em;
+}
+
+@keyframes spread
+{
+   
+    50%
+    {
+       background:radial-gradient(slateblue,skyblue,navy); 
+    }
+    100%
+    {
+        background: radial-gradient(blue,lightblue,aliceblue);
+    }
+}
+
+.bana
+{
+    display: block;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    background-color: inherit;
+    color: grey;
+}
+
+.bana:hover
+{
+    font-size: 2em;
+    border-right:1px solid burlywood ;
+    color: black;
+    border-top:1px solid gold;
+}
+
+.main
+{
+    font-size: 3em;
+    color: brown;
+}
+.inner
+{
+    font-size: 1em;
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    top: 36%;
+    left: 39%;
+    width: 350px;
+    letter-spacing: .1em;
+}
+
+.kati
+{
+    display: flex;
+    align-items: center;
+}
+
+.vivid
+{
+    font-size: 6em;
+    position: absolute;
+    top: 42%;
+    left: 13%;
+    opacity: .03;
+    text-orientation: sideways-right;
+    
+}
+
+
+ @media (min-width:1400px)
+{
+    .inner
+    {
+      top:34%;
+      left: 38%;  
+      font-size: 1.4em;
+      width: 400px;
+      font-weight: lighter;
+    }
+    .main
+    {
+        font-size: 4rem;
+    }
+    .links a
+    {
+        font-size:1.3em;
+        font-weight: bold;
+    }
+    
+    footer h5
+    {
+        font-size: 1.2em;
+        letter-spacing: .1em;
+    }
+    .bt
+    {
+        height: 40px;
+        width: 150px;
+        font-size: 1.2em;
+    }
+    
+    .getStarted
+    {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .bbl
+    {
+        width: 110px;
+        height: 110px;
+        font-size: 1.8em;
+    }
+    #hmid
+    {
+        font-size: 1.5em;
+        letter-spacing: .3em;
+    }
+}
+
+@media (min-width:2560px)
+{
+    .inner
+    {
+        top: 39%;
+        left: 43%;
+    }
+} 
+
+@media (max-width:768px)
+{
+    .getStarted
+    {
+        text-transform: uppercase;
+    }
+   .links a
+   {
+    display: none;
+   }
+   .main
+   {
+    font-size: 2.5em;
+   }
+   .inner
+   {
+    width: 250px;
+    font-size: .9em;
+    top: 37%;
+    left: 37%;
+   }
+   .meta
+   {
+    width: 40px;
+   }
+   .bbl
+   {
+    bottom: 2px;
+   }
+   .vivid
+   {
+    font-size: 6em;
+    left: 2%;
+    top: 35%;
+   }
+}
+
+@media (max-width:425px)
+{
+    body
+    {
+        background-repeat:no-repeat;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+   
+    #hmid
+    {
+        font-size: .8em;
+    }
+    
+    .bns
+    {
+        display: none;
+    }
+    .main
+    {
+        font-size: 1.8em;
+    }
+    .meta
+    {
+        width: 30px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .vivid
+    {
+        font-size: 5em;
+        top: 25%;
+    }
+   .inner
+   {
+    top: 34%;
+    font-size: .8em;
+    width: 200px;
+   }
+}
+
+@media (max-width:320px)
+{
+    .inner
+    {
+        font-size: .7em;
+    }
+    .meta
+    {
+        width: 30px;
+    }
+    
+    #ig
+    {
+        margin-top: 30px;
+    }
+}
+/* the end...periodt */
