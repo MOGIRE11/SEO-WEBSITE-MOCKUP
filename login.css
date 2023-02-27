@@ -20,7 +20,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(img/Italy\ -\ Venezia.jpg); 
+    background: url(img/orangebg.webp); 
     background-size: cover;
     object-fit: contain;
     background-position: center;
@@ -41,8 +41,8 @@ form
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid lightgrey;
-    box-shadow: 2px 0px 4px 0px grey;
+    border: 1px solid inherit;
+    box-shadow: 0px 1px 5px 0px brown;
     background:transparent;
     display: flex;
     flex-direction: column;

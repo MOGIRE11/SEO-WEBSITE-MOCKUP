@@ -12,7 +12,10 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(248, 244, 245);
+    /* background-color: rgb(248, 244, 245); */
+    background: url(img/pattern.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form
@@ -28,7 +31,7 @@ form
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 2px 2px 8px 0px lightgrey; 
+    box-shadow: 1px 1px 5px 0px brown; 
 }
 .top,.p1
 {
