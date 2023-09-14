@@ -12,9 +12,9 @@
 <body>
     <div class="outer">
         <fieldset>
-           <form action="mailto:mark@fineteklabs.com" method="post">
+           <form name="logForm" onsubmit="checkLogin(this.form)>
             
-            <h2><u class="under">Sign Up</u></h2>
+            <h2><u class="under" id="signup">Sign Up</u></h2>
             <p>Enter your email address below and we will email you your login page.<br class="toa">
                 You can sign in from your web address which looks like this.
             </p>
@@ -22,16 +22,15 @@
        
                 
                 <label for="mail">Email address</label>
-            <input type="email" placeholder="e.g. John316@gmail.com" id="mail" name="user email" required>
+            <input type="email" placeholder="e.g. John316@gmail.com" id="mail" name="user_email" required>
             
             <label for="pass">Enter password</label>
             <input type="password" placeholder="Password" name="password" required>
             
-            <div class="same">
-                
+            <div class="same">               
             <label for="tick"><input type="checkbox" id="tick" role="banner" checked required>Keep me signed in</label>
             
-            <button id="signin" type="submit"><a href="form.html" id="sign">LOGIN PAGE</a></button>
+            <button id="signin" type="submit" value="login ">LOGIN</button>
     
             <button id="google" type="button">Sign in with Google</button>
             <button id="fb" type="button"> Sign in with facebook</button>
@@ -47,15 +46,10 @@
         </p>
         
         &copy 2023 
-        <b><i>Thee_MMO</i>💙</b>
+        <b><i>Thee MMO</i>💙</b>
     </div>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init("ATtkCKT4JJ3pEgzPw");
-})();
-</script>
+  
+<script src="script.js"></script>
+    
 </body>
 </html>
